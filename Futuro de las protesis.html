@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuro</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link href="css/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="theme-color" content="#2091F9">
+    <style>
+        .hero {
+            width: 100%;
+            height: 100vh;
+            min-height: 600px;
+            max-height: 800px;
+            position: relative;
+            display: grid;
+            grid-template-rows: 100px 1fr;
+            color: #fff;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('images/futuro4.jpg');
+            background-size: cover;
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+            z-index: -1;
+        }
+
+        .image-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .zoom-image {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .zoom-image:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">Protesis Bionica.</h2>
+            </div>
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="index.html" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="index.html #history" class="nav__links">Historia de</a>
+                </li>
+                <li class="nav__items">
+                    <a href="contacto.html" class="nav__links" target="_blank">Contacto</a>
+                </li>
+                <li class="nav__items">
+                    <a href="Protesis Robotica para brazo.pdf " class="nav__links" target="_blank">Blog</a>
+                </li>
+                <img src="./images/close.svg" class="nav__close">
+            </ul>
+            <div class="nav__menu">
+                <img src="./images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+
+        <section class="hero__container container">
+            <h1 class="hero__title">Futuro de las protesis Bionicas</h1>
+            <p class="hero__paragraph">La biotecnología se enfrenta a muchísimos retos, el primero es igualar los
+                sistemas
+                biónicos los sistemas naturales del cuerpo humano.
+            </p>
+            <a href="#nano" class="cta">Comienza ahora</a>
+        </section>
+    </header>
+
+    <main>
+        <section class="container about">
+            <h2 class="subtitle">¿Hacia a donde apunta el uso de prótesis bionicas?</h2>
+            <p class="knowledge__paragraph">La biotecnología se enfrenta a muchísimos retos, el primero es igualar los
+                sistemas
+                biónicos los sistemas naturales del cuerpo humano y el control de los 27 grados de libertad
+                en tiempo real. Aumentar nuestras capacidades humanas para, por ejemplo, tener de cinco
+                dedos sean seis, o que una persona que pueda tener cuatro brazos o tres piernas. <br>
+                Una de las áreas de investigación más emocionantes es la conexión directa entre el cerebro y
+                las prótesis biónicas. <br> <br>
+                Las nanotecnologías pueden ayudar a mejorar la interfaz entre la
+                prótesis y el sistema nervioso, permitiendo un control más preciso y natural de las prótesis
+                por parte del usuario. <br>
+
+            </p> <br><br>
+            <div class="image-container">
+                <img src="images/futuro2.jpg" alt="Imagen con efecto de zoom" class="zoom-image">
+            </div>
+            </div>
+            <br> <br>
+            <h2 id="nano" class="subtitle">La nanotecnología</h2>
+            <p class="knowledge__paragraph">
+                La nanotecnología ofrece la posibilidad de crear materiales más livianos, resistentes y
+                flexibles para las prótesis biónicas <br><br>
+
+                Por ejemplo, se pueden diseñar nanomateriales
+                compuestos para recrear la estructura y la funcionalidad de tejidos y huesos naturales.
+                Además, los sensores nanoescalares pueden proporcionar una retroalimentación más precisa
+                y detallada al usuario y permitir un mayor grado de control sobre la prótesis.<br><br>
+
+                Las prótesis biónicas tradicionales a menudo dependen de baterías externas o cables para su
+                funcionamiento, lo que limita la movilidad del usuario. La nanotecnología puede ayudar a
+                desarrollar sistemas de generación de energía integrados en la prótesis, como células solares
+                flexibles o nano generadores que aprovechan la energía del movimiento. Esto permitiría que
+                las prótesis sean más autónomas y reduciría la necesidad de recargar o reemplazar las baterías
+                con frecuencia.<br><br>
+
+                La nanotecnología también se está utilizando para investigar y desarrollar enfoques de
+                regeneración de tejidos. Se están estudiando nanomateriales que pueden estimular el
+                crecimiento celular y la regeneración de tejidos dañados. Esto podría llevar a la creación de
+                prótesis biónicas que se integren de manera más efectiva con los tejidos circundantes y
+                promuevan la curación y la regeneración en lugar de simplemente reemplazar la función
+                perdida<br><br>
+
+                Existen varias empresas en todo el mundo que se dedican a trabajar con nanotecnología. Aquí te
+                mencionaré
+                algunas de las empresas más reconocidas en este campo:</p>
+            <section class="questions container">
+                <h2 class="subtitle">Empresas que desarrollan nanotecnología</h2>
+                <p class="questions__paragraph">En esta seccion encontraras respuestas sobre las empresas que trabajan
+                    con nanotecnología</p>
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                Össur
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <p>Es una empresa líder en el campo de las prótesis y órtesis. Utiliza la nanotecnología
+                                    en la fabricación de sus prótesis para
+                                    mejorar la respuesta y la durabilidad de los materiales utilizados,
+                                    así como para optimizar la interfaz entre la prótesis y el cuerpo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwo">
+                                BiOM
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <p>
+                                    Esta empresa, adquirida por Össur en 2014, se especializa en el desarrollo de
+                                    prótesis biónicas
+                                    para extremidades inferiores. Sus dispositivos aprovechan la nanotecnología para
+                                    simular el movimiento y
+                                    la funcionalidad natural del pie y la pierna, lo que permite a los usuarios caminar
+                                    y correr de manera más eficiente.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwo">
+                                Ottobock
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <p>
+                                    Es una empresa alemana reconocida por sus prótesis innovadoras y soluciones de
+                                    rehabilitación.
+                                    Utiliza la nanotecnología en la fabricación de materiales compuestos avanzados, como
+                                    las prótesis de carbono,
+                                    para ofrecer una mayor resistencia y ligereza, y mejorar la comodidad y el
+                                    rendimiento de sus prótesis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThree">
+                                Touch Bionics
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <p>Esta empresa se especializa en prótesis de extremidades superiores y
+                                    utiliza la nanotecnología en el diseño y la fabricación de sus prótesis para
+                                    lograr una mayor precisión en el control del movimiento y una mejor integración con
+                                    los tejidos y
+                                    las interfaces de usuario.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="about__main">
+
+                <div class="card" style="width: 20rem;">
+                    <img src="images/Nanotecnologia.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Materiales y procesos de produccion</h5>
+                        <p>Algunos avances tecnológicos aplicados a la medicina suenan todavía a ciencia-ficción. Por
+                            ejemplo,
+                            el empleo de las impresoras 3D para crear órganos artificiales.
+                            Sin embargo, estas impresoras ya se usan en ámbitos como la fabricación de instrumental
+                            médico,
+                            implantes, prótesis y elementos ortopédicos.
+                        </p>
+                        <a href="Materiales y proceso de produccion.html" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+
+
+                <div class="card" style="width: 20rem;">
+                    <img src="images/personas.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pruebas en soldados y personas normales</h5>
+                        <p class="card-text">Cuando asimos con nuestros dedos un objeto lo sujetamos con más o menos
+                            fuerza según la
+                            información que nuestro sentido del tacto recoge para ser enviada a nuestro cerebro, una
+                            competencia
+                            de la que carecen hasta ahora los brazos robóticos diseñados para persona mutiladas.
+                        </p>
+                        <a href="Pruebas en soldados.html" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 20rem;">
+                    <img src="images/futuro.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Futuro de las protesis Bionicas</h5>
+                        <p class="card-text">La biotecnología se enfrenta a muchísimos retos, el primero es igualar los
+                            sistemas
+                            biónicos los sistemas naturales del cuerpo humano y el control de los 27 grados de libertad
+                            en tiempo real. Aumentar nuestras capacidades humanas para, por ejemplo, tener de cinco
+                            dedos sean seis, o que una persona que pueda tener cuatro brazos o tres piernas.
+                        </p>
+                        <a href="Futuro de las protesis.html" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="knowledge">
+            <div class="knowledge__container container">
+                <div class="knowledege__texts">
+                    <h2 class="subtitle">Te interesa saber el mecanismo de nuestras protesis?</h2>
+                    <p class="knowledge__paragraph">
+                        Las prótesis de brazo llevan incorporada una prótesis de mano, para cualquier nivel de
+                        amputación. Tiene la función de apertura y cierre, mediante un sistema de accionamiento
+                        miniaturizado. Incorpora un pequeño motor de alto desarrollo que mueve los dedos medio e índice,
+                        así como el pulgar abriendo y cerrando la mano.
+                    </p>
+                    <a href="https://youtube.com/shorts/VmwmmFG76UI?feature=share" class="cta">Descubrelo aqui</a>
+                </div>
+                <figure class="knowledge__picture">
+                    <img src="./images/brazo white.jpg" class="knowledge__img">
+                </figure>
+            </div>
+        </section>
+
+        <section class="price container">
+            <h2 class="subtitle">Obten el plan perfecto para adquirir tu protesis</h2>
+
+            <div class="price__table">
+                <div class="price__element">
+                    <p class="price__name">mano</p>
+                    <h3 class="price__price">Free</h3>
+
+                    <div class="price__items">
+                        <p class="price__features">Tratamiento</p>
+                        <p class="price__features">Terapias personalizadas</p>
+                        <p class="price__features">Asistencias luego de adquirirla</p>
+                    </div>
+
+                    <a class="price__cta">Empieza ahora</a>
+                </div>
+
+
+                <div class="price__element price__element--best">
+                    <p class="price__name">Brazo Completo</p>
+                    <h3 class="price__price">$30/mes por 2 años y 3 meses</h3>
+
+                    <div class="price__items">
+                        <p class="price__features">Tratamiento</p>
+                        <p class="price__features">Terapias personalizadas</p>
+                        <p class="price__features">Asistencias luego de adquirirla</p>
+                    </div>
+
+                    <a class="price__cta">Empieza ahora</a>
+                </div>
+
+
+                <div class="price__element">
+                    <p class="price__name">antebrazo</p>
+                    <h3 class="price__price">$40/mes por 3 años</h3>
+
+                    <div class="price__items">
+                        <p class="price__features">Tratamiento</p>
+                        <p class="price__features">Terapias personalizadas</p>
+                        <p class="price__features">Asistencias luego de adquirirla</p>
+                    </div>
+
+                    <a class="price__cta">Empieza ahora</a>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Protesis Bionica.</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="index.html" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="index.html #history" class="nav__links">Historia de</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="contacto.html" class="nav__links">Contacto</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="Protesis Robotica para brazo.pdf" class="nav__links" target="_blank">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+            <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+                <h2 class="footer__newsletter">Suscribete a nuestra pagina</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+                    <input type="button" value="Registrate" class="footer__submit">
+                </div>
+            </form>
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
+                <a class="footer__icons"><img src="./images/twitter.svg" class="footer__img"></a>
+                <a class="footer__icons"><img src="./images/youtube.svg" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy;</h3>
+            <ul class="creators-list">
+                <li>Jose</li>
+                <li>Ervin</li>
+                <li>Pavel</li>
+                <li>Eduardo</li>
+                <li>Arief</li>
+            </ul>
+        </section>
+    </footer>
+    <script src="js/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>

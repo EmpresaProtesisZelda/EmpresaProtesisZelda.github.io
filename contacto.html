@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protesis</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link href="css/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="theme-color" content="#2091F9">
+    <style>
+        .hero {
+        width: 100%;
+        height: 100vh;
+        min-height: 600px;
+        max-height: 800px;
+        position: relative;
+        display: grid;
+        grid-template-rows: 100px 1fr;
+        color: #fff;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('images/computer.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
+}
+    </style>
+</head>
+
+<body>
+    
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">Protesis Bionica.</h2>
+            </div>
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="index.html" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="index.html #history" class="nav__links">Historia de</a>
+                </li>
+                <li class="nav__items">
+                    <a href="contacto.html" class="nav__links" target="_blank">Contacto</a>
+                </li>
+                <li class="nav__items">
+                    <a href="Protesis Robotica para brazo.pdf " class="nav__links" target="_blank">Blog</a>
+                </li>
+                <img src="./images/close.svg" class="nav__close">
+            </ul>
+            <div class="nav__menu">
+                <img src="./images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+        
+        <section class="hero__container container">
+            <h1 class="hero__title">¡Contáctanos!</h1>
+            <p class="hero__paragraph">¿Listo para dar un paso hacia una vida mejor? ¡Contáctanos y descubre cómo nuestras prótesis pueden hacer una diferencia en tu vida!</p>
+            <a href="#contact" class="cta">Registrate</a>
+        </section>
+    </header>
+
+    <main>
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              const form = document.getElementById("contact-form");
+              const successMessage = document.getElementById("success-message");
+        
+              form.addEventListener("submit", function(event) {
+                event.preventDefault(); // Evitar el envío del formulario por defecto
+        
+                // Mostrar mensaje de éxito
+                successMessage.style.display = "block";
+                
+                // Limpiar el formulario
+                form.reset();
+              });
+            });
+          </script>
+
+<form id="contact-form" class="contact-form" action="/enviar.php" method="post">
+    <h1 id="contact">¡Contáctanos!</h1>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br>
+    
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required><br>
+    
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" required><br>
+    
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" required></textarea><br>
+    
+    <input type="submit" value="Enviar">
+
+    <p id="success-message" class="success-message" style="display: none;">¡Se ha enviado con éxito! Pronto nos pondremos en contacto contigo.</p>
+  
+    <h2>Información de contacto:</h2>
+    <p>Dirección: 123 Calle Principal, Ciudad, País</p>
+    <p>Teléfono: +123456789</p>
+    <p>Correo electrónico: info@example.com</p>
+    
+    <h2>Síguenos en redes sociales:</h2>
+    <p>Facebook: <a href="https://www.facebook.com/tuempresa">facebook.com/tuempresa</a></p>
+    <p>Twitter: <a href="https://www.twitter.com/tuempresa">twitter.com/tuempresa</a></p>
+
+  </form>
+
+ 
+         
+          
+        <section class="price container">
+            <h2 class="subtitle">Obten el plan perfecto para adquirir tu protesis</h2>
+
+            <div class="price__table">
+                <div class="price__element">
+                    <p class="price__name">mano</p>
+                    <h3 class="price__price">Free</h3>
+
+                    <div class="price__items">
+                        <p class="price__features">Tratamiento</p>
+                        <p class="price__features">Terapias personalizadas</p>
+                        <p class="price__features">Asistencias luego de adquirirla</p>
+                    </div>
+
+                    <a class="price__cta">Empieza ahora</a>
+                </div>
+
+
+                <div class="price__element price__element--best">
+                    <p class="price__name">Brazo Completo</p>
+                    <h3 class="price__price">$30/mes por 2 años y 3 meses</h3>
+
+                    <div class="price__items">
+                        <p class="price__features">Tratamiento</p>
+                        <p class="price__features">Terapias personalizadas</p>
+                        <p class="price__features">Asistencias luego de adquirirla</p>
+                    </div>
+
+                    <a class="price__cta">Empieza ahora</a>
+                </div>
+
+
+                <div class="price__element">
+                    <p class="price__name">antebrazo</p>
+                    <h3 class="price__price">$40/mes por 3 años</h3>
+
+                    <div class="price__items">
+                        <p class="price__features">Tratamiento</p>
+                        <p class="price__features">Terapias personalizadas</p>
+                        <p class="price__features">Asistencias luego de adquirirla</p>
+                    </div>
+
+                    <a class="price__cta">Empieza ahora</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="questions container">
+            <h2 class="subtitle">Preguntas frecuentes</h2>
+            <p class="questions__paragraph">En esta seccion encontraras respuestas sobre las cuestiones mas frecuentes
+                de nuestros seguidores</p>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            Cuanto cuesta adquirir una de estas protesis?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <p>Normalmente, un sistema biónico con sistema de última generación como la que nosotros
+                                tenemos, una mano biónica puede estar alrededor de mínimo 20 mil hasta 100 mil dólares.
+                                La tecnología del sistema es superior a las que existen en el mercado, pero con unos
+                                costos muchos menores <br> Por otro lado, La compañía Exiii, fundada en el 2014 por tres
+                                exingenieros de los gigantes tecnológicos Sony y Panasonic, ha diseñado un prototipo de
+                                prótesis cuyo costo sería la décima parte de los 1,5 millones de yenes (unos 12.516
+                                dólares) que cuesta actualmente adquirir este tipo de tecnología, informó el diario
+                                Nikkei.</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            De que estan hechas estas protesis?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p> Una prótesis fabricada con nanotecnología puede estar compuesta por una variedad de
+                                materiales.
+                                <br>• Nano compositores: Los nano compositores son materiales que combinan una matriz
+                                polimérica con nanomateriales, como nanopartículas, nano fibras o nanotubos.
+                                <br>• Recubrimientos nanoestructurados: Se pueden aplicar recubrimientos
+                                nanoestructurados en la superficie de la prótesis para mejorar su rendimiento y
+                                funcionalidad.
+                                <br>• Nanomateriales conductores: Los nanomateriales conductores, como los nanotubos de
+                                carbono o los nano cables metálicos, se utilizan en la fabricación de sensores y
+                                actuadores para prótesis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            Cual es la principal ventaja de estas protesis sobre las convencionales?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>Las prótesis biónicas tradicionales a menudo dependen de baterías externas o cables para
+                                su funcionamiento, lo que limita la movilidad del usuario. La nanotecnología puede
+                                ayudar a desarrollar sistemas de generación de energía integrados en la prótesis, como
+                                células solares flexibles o nano generadores que aprovechan la energía del movimiento.
+                                Esto permitiría que las prótesis sean más autónomas y reduciría la necesidad de recargar
+                                o reemplazar las baterías con frecuencia.
+                                La nanotecnología también se está utilizando para investigar y desarrollar enfoques de
+                                regeneración de tejidos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Protesis Bionica.</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="index.html" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="index.html #history" class="nav__links">Historia de</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="contacto.html" class="nav__links">Contacto</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="Protesis Robotica para brazo.pdf" class="nav__links">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+            <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+                <h2 class="footer__newsletter">Suscribete a nuestra pagina</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+                    <input type="button" value="Registrate" class="footer__submit">
+                </div>
+            </form>
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a  class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
+                <a  class="footer__icons"><img src="./images/twitter.svg" class="footer__img"></a>
+                <a  class="footer__icons"><img src="./images/youtube.svg" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados  &copy; </h3>
+
+            <ul class="creators-list">
+                <li>Jose</li>
+                <li>Ervin</li>
+                <li>Pavel</li>
+                <li>Eduardo</li>
+                <li>Arief</li>
+            </ul>
+        </section>
+    </footer>
+    <script src="js/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>

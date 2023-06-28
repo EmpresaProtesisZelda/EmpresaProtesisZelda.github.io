@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soldados</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link href="css/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="theme-color" content="#2091F9">
+    <style>
+        .hero {
+            width: 100%;
+            height: 100vh;
+            min-height: 600px;
+            max-height: 800px;
+            position: relative;
+            display: grid;
+            grid-template-rows: 100px 1fr;
+            color: #fff;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('images/img.jpg');
+            background-size: cover;
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+            z-index: -1;
+        }
+
+        .image-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .zoom-image {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .zoom-image:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">Protesis Bionica.</h2>
+            </div>
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="index.html" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="index.html #history" class="nav__links">Historia de</a>
+                </li>
+                <li class="nav__items">
+                    <a href="contacto.html" class="nav__links" target="_blank">Contacto</a>
+                </li>
+                <li class="nav__items">
+                    <a href="Protesis Robotica para brazo.pdf " class="nav__links" target="_blank">Blog</a>
+                </li>
+                <img src="./images/close.svg" class="nav__close">
+            </ul>
+            <div class="nav__menu">
+                <img src="./images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+
+        <section class="hero__container container">
+            <h1 class="hero__title">Pruebas de prótesis en soldados con amputaciones</h1>
+            <p class="hero__paragraph">La empresa de prótesis biónicas HAT que
+                trabaja con nanotecnología les devolvió la
+                movilidad a soldados ucranianos amputados
+                por la guerra.</p>
+            <a href="#HAT" class="cta">Comienza ahora</a>
+        </section>
+    </header>
+
+    <main>
+        <section class="container about">
+            <h2 class="subtitle">Uso de prótesis en soldados.</h2>
+            <p class="knowledge__paragraph">Las prótesis biónicas pueden ser controladas de varias maneras. Algunas prótesis
+                utilizan sensores colocados en los músculos residuales del individuo, lo que permite que los movimientos
+                de los músculos se traduzcan en movimientos de la prótesis. Otras prótesis biónicas utilizan señales
+                cerebrales para controlar los movimientos de la extremidad artificial. Esto se logra mediante la
+                conexión de electrodos a la superficie del cerebro o mediante implantes más invasivos. <br>
+                En el caso de ex soldados, muchas organizaciones y programas gubernamentales en varios países han
+                trabajado para proporcionar prótesis biónicas avanzadas a aquellos que las necesitan. Estos programas a
+                menudo incluyen evaluaciones médicas y terapia de rehabilitación para ayudar a los usuarios a adaptarse
+                y maximizar el uso de las prótesis. También se están realizando investigaciones continuas para mejorar
+                aún más las capacidades de las prótesis biónicas y hacerlas más accesibles para aquellos que las
+                necesitan. <br>
+                En resumen, las prótesis biónicas ofrecen a los ex soldados y veteranos de guerra la posibilidad de
+                recuperar parte de la funcionalidad perdida debido a amputaciones u otras lesiones. Con avances
+                tecnológicos en curso, se espera que estas prótesis sigan mejorando en términos de apariencia, control y
+                funcionalidad en el futuro. <br>
+
+
+            </p> <br><br>
+           
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <h2 class="subtitle">Antes y despues</h2>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@davide_morana/video/6913896960709692673" data-video-id="6913896960709692673" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@davide_morana" href="https://www.tiktok.com/@davide_morana?refer=embed">@davide_morana</a> Hola TikTok 👋🏼 <a title="foryoupage" target="_blank" href="https://www.tiktok.com/tag/foryoupage?refer=embed">#foryoupage</a> <a target="_blank" title="♬ how GREAT I am by Aj Greene - AJ📺" href="https://www.tiktok.com/music/how-GREAT-I-am-by-Aj-Greene-6817029733906254597?refer=embed">♬ how GREAT I am by Aj Greene - AJ📺</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/E3451D15-6858-4165-AFAC-2E5DB8000147_w1080_h608.avif" class="d-block w-100" alt="..." width="200px" height=" 500px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Sin título.png" class="d-block w-100" alt="..." width="200px" height=" 500px">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            </div>
+            <br> <br>
+            <h2 id="HAT" class="subtitle">Soldados ucranianos heridos en guerra reciben prótesis biónicas de la empresa HAT</h2>
+            <div class="image-container">
+                <img src="images/soldados.jpg" alt="Imagen con efecto de zoom" class="zoom-image">
+            </div>
+            <p class="knowledge__paragraph">
+                Soldados ucranianos heridos en guerra reciben prótesis biónicas de tecnología mexicana en el Senado de
+                la República. En una visita al Senado de la República de México, soldados ucranianos que resultaron
+                heridos durante el
+                conflicto con Rusia han recibido prótesis de última tecnología fabricadas por la empresa mexicana Human
+                Assistive Technologies (HAT). Estas prótesis especializadas en manos y piernas fueron desarrolladas por
+                HAT y cuentan con características avanzadas. <br> <br>
+
+                Los soldados se reunieron con los miembros de la comisión de Ciencia y Tecnología, quienes les brindaron
+                un reconocimiento especial por su compromiso en el impulso de la tecnología mexicana. Además, tuvieron
+                la oportunidad de presenciar la sesión plenaria del Senado.<br><br>
+
+                Durante una conferencia de prensa, el presidente de la comisión, Jorge Carlos Ramírez Marín, explicó que
+                los soldados Oleh Holovchenko y Danylo Kubariev, quienes perdieron extremidades durante el conflicto,
+                han sido beneficiados con prótesis biónicas inteligentes que se controlan mediante señales cerebrales.
+                Estas prótesis, desarrolladas por HAT, les permiten una mayor inclusión en la sociedad y mejor calidad
+                de vida.<br><br>
+
+                Ramírez Marín también hizo énfasis en el ingeniero Álvaro Ríos Poveda, director de Human Assistive
+                Technologies, por su destacado papel en la creación y suministro de estas prótesis inteligentes.
+                Asimismo, agradeció la colaboración de la diáspora ucraniana en México y la presencia de empresarios
+                ucranianos en el evento.<br><br>
+
+                Este caso demuestra la colaboración y el avance tecnológico internacional, en el cual una empresa
+                mexicana ha desarrollado prótesis biónicas de vanguardia para ayudar a soldados ucranianos heridos
+                durante el conflicto, brindándoles una mejor calidad de vida y promoviendo su inclusión en la sociedad.
+                <br>
+
+            <h2 class="subtitle">Pruebas de las prótesis en personas con una vida más cotidiana</h2>
+            <p class="knowledge__paragraph">
+                <br>
+                Cuando asimos con nuestros dedos un objeto lo sujetamos con más o menos fuerza según la información que
+                nuestro sentido del tacto recoge para ser enviada a nuestro cerebro, una competencia de la que carecen
+                hasta ahora los brazos robóticos diseñados para persona mutiladas. Pero unos investigadores suecos han
+                creado una prótesis capaz de captar esas sensaciones, y permitir que las personas sin brazos o manos
+                puedan sujetar objetos con la suficiente presión para que no se caigan, pero con la necesaria para no
+                comprimirlas en exceso.<br><br>
+
+                De momento lo han probado tres pacientes suecos, que desde hace siete años contaban con una prótesis
+                manejada con la mente. El prodigio se ha conseguido con la estimulación de los nervios que antes de la
+                amputación estaban conectados a la mano biológica. El nuevo brazo biónico, anclado al hueso del muñón,
+                cuenta con unos electrodos implantados en los músculos y nervios del mismo.<br>
+                Según han explicado los pacientes que han formado parte de este experimento notan una sensación similar
+                a la que experimentan muchos mutilados, conocida como síndrome del miembro fantasma. Es decir, la
+                percepción de sensaciones como si el miembro amputado continuara en su sitio. La nueva prótesis tiene
+                otra cualidad: es autónoma, de forma que todos los componentes electrónicos se encuentran en su
+                interior, sin que el usuario tenga que llevar un equipo externo adicional.<br><br>
+
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JuZVqwprrE4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <div class="about__main">
+
+                <div class="card" style="width: 20rem;">
+                    <img src="images/Nanotecnologia.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Materiales y procesos de produccion</h5>
+                        <p>Algunos avances tecnológicos aplicados a la medicina suenan todavía a ciencia-ficción. Por
+                            ejemplo,
+                            el empleo de las impresoras 3D para crear órganos artificiales.
+                            Sin embargo, estas impresoras ya se usan en ámbitos como la fabricación de instrumental
+                            médico,
+                            implantes, prótesis y elementos ortopédicos.
+                        </p>
+                        <a href="Materiales y proceso de produccion.html" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+
+
+                <div class="card" style="width: 20rem;">
+                    <img src="images/personas.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pruebas en soldados y personas normales</h5>
+                        <p class="card-text">Cuando asimos con nuestros dedos un objeto lo sujetamos con más o menos
+                            fuerza según la
+                            información que nuestro sentido del tacto recoge para ser enviada a nuestro cerebro, una
+                            competencia
+                            de la que carecen hasta ahora los brazos robóticos diseñados para persona mutiladas.
+                        </p>
+                        <a href="Pruebas en soldados.html" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 20rem;">
+                    <img src="images/futuro.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Futuro de las protesis Bionicas</h5>
+                        <p class="card-text">La biotecnología se enfrenta a muchísimos retos, el primero es igualar los
+                            sistemas
+                            biónicos los sistemas naturales del cuerpo humano y el control de los 27 grados de libertad
+                            en tiempo real. Aumentar nuestras capacidades humanas para, por ejemplo, tener de cinco
+                            dedos sean seis, o que una persona que pueda tener cuatro brazos o tres piernas.
+                        </p>
+                        <a href="Futuro de las protesis.html" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="knowledge">
+            <div class="knowledge__container container">
+                <div class="knowledege__texts">
+                    <h2 class="subtitle">Te interesa saber el mecanismo de nuestras protesis?</h2>
+                    <p class="knowledge__paragraph">
+                        Las prótesis de brazo llevan incorporada una prótesis de mano, para cualquier nivel de
+                        amputación. Tiene la función de apertura y cierre, mediante un sistema de accionamiento
+                        miniaturizado. Incorpora un pequeño motor de alto desarrollo que mueve los dedos medio e índice,
+                        así como el pulgar abriendo y cerrando la mano.
+                    </p>
+                    <a href="https://youtube.com/shorts/VmwmmFG76UI?feature=share" class="cta">Descubrelo aqui</a>
+                </div>
+                <figure class="knowledge__picture">
+                    <img src="./images/brazo white.jpg" class="knowledge__img">
+                </figure>
+            </div>
+        </section>
+
+        <section class="price container">
+            <h2 class="subtitle">Obten el plan perfecto para adquirir tu protesis</h2>
+
+            <div class="price__table">
+                <div class="price__element">
+                    <p class="price__name">mano</p>
+                    <h3 class="price__price">Free</h3>
+
+                    <div class="price__items">
+                        <p class="price__features">Tratamiento</p>
+                        <p class="price__features">Terapias personalizadas</p>
+                        <p class="price__features">Asistencias luego de adquirirla</p>
+                    </div>
+
+                    <a class="price__cta">Empieza ahora</a>
+                </div>
+
+
+                <div class="price__element price__element--best">
+                    <p class="price__name">Brazo Completo</p>
+                    <h3 class="price__price">$30/mes por 2 años y 3 meses</h3>
+
+                    <div class="price__items">
+                        <p class="price__features">Tratamiento</p>
+                        <p class="price__features">Terapias personalizadas</p>
+                        <p class="price__features">Asistencias luego de adquirirla</p>
+                    </div>
+
+                    <a class="price__cta">Empieza ahora</a>
+                </div>
+
+
+                <div class="price__element">
+                    <p class="price__name">antebrazo</p>
+                    <h3 class="price__price">$40/mes por 3 años</h3>
+
+                    <div class="price__items">
+                        <p class="price__features">Tratamiento</p>
+                        <p class="price__features">Terapias personalizadas</p>
+                        <p class="price__features">Asistencias luego de adquirirla</p>
+                    </div>
+
+                    <a class="price__cta">Empieza ahora</a>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Protesis Bionica.</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="index.html" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="index.html #history" class="nav__links">Historia de</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="contacto.html" class="nav__links">Contacto</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="Protesis Robotica para brazo.pdf" class="nav__links" target="_blank">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+            <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+                <h2 class="footer__newsletter">Suscribete a nuestra pagina</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+                    <input type="button" value="Registrate" class="footer__submit">
+                </div>
+            </form>
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
+                <a class="footer__icons"><img src="./images/twitter.svg" class="footer__img"></a>
+                <a class="footer__icons"><img src="./images/youtube.svg" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy;</h3>
+            <ul class="creators-list">
+                <li>Jose</li>
+                <li>Ervin</li>
+                <li>Pavel</li>
+                <li>Eduardo</li>
+                <li>Arief</li>
+            </ul>
+        </section>
+    </footer>
+    <script src="js/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>
